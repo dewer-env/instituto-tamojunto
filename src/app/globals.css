@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-fundo:      #F5F1E8;
+  --color-secundaria: #88989E;
+  --color-branco:     #FCF3EA;
+  --color-secao:      #F1EADC;
+  --color-texto:      #000000;
+  --color-texto-leve: #555555;
+
+  /* Margem lateral global — alterar aqui reflete em todo o site */
+  --site-px: clamp(1.5rem, 12vw, 14rem);
+
+  /* Espaçamento vertical entre seções — alterar aqui reflete em todo o site */
+  --section-gap: 11rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer utilities {
+  .site-px {
+    padding-inline: var(--site-px);
+  }
+  .section-pt {
+    padding-top: var(--section-gap);
+  }
+  .section-py {
+    padding-top: var(--section-gap);
+    padding-bottom: var(--section-gap);
   }
 }
 
+@theme inline {
+  --color-fundo:      var(--color-fundo);
+  --color-secundaria: var(--color-secundaria);
+  --color-branco:     var(--color-branco);
+  --color-secao:      var(--color-secao);
+  --color-texto:      var(--color-texto);
+  --font-sans: var(--font-libre-baskerville);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-fundo);
+  color: var(--color-texto);
 }

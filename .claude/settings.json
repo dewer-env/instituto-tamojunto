@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s http://localhost:3000/galeria)",
+      "Bash(curl -s http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__0ipj9kd._.css)",
+      "Bash(sed -n '18,30p' src/app/globals.css)",
+      "Bash(curl -s http://localhost:3000__TRACKED_VAR__)"
+    ]
+  }
+}

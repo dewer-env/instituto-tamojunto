@@ -72,7 +72,7 @@ export default function GaleriaGrid() {
   return (
     <>
       {/* Grid — respeitando site-px */}
-      <section className="site-px pt-12 pb-12">
+      <section className="site-px pt-12 section-pb">
 
         {/* Mobile: grid 2 colunas simples */}
         <div className="grid grid-cols-2 gap-3 md:hidden">

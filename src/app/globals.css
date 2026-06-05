@@ -22,6 +22,9 @@
   .section-pt {
     padding-top: var(--section-gap);
   }
+  .section-pb {
+    padding-bottom: var(--section-gap);
+  }
   .section-py {
     padding-top: var(--section-gap);
     padding-bottom: var(--section-gap);

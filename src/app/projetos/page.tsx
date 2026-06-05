@@ -78,7 +78,7 @@ export default function ProjetosPage() {
       </section>
 
       {/* Grid de projetos — layout alternado */}
-      <section className="site-px">
+      <section className="site-px section-pb">
         {projetos.map(({ titulo, texto, img }, i) => {
           const par = i % 2 === 0;
           return (

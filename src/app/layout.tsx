@@ -10,8 +10,12 @@ const libreBaskerville = Libre_Baskerville({
 });
 
 export const metadata: Metadata = {
-  title: "Instituto Tamo Junto",
-  description: "Instituto Tamo Junto",
+  title: {
+    default: "Instituto Tamo Junto",
+    template: "%s | Instituto Tamo Junto",
+  },
+  description:
+    "Desde 2016, o Instituto Tamo Junto transforma a Rota Ecológica dos Milagres através da força da comunidade. Aqui nós vivemos em comunidade e você faz parte dela.",
 };
 
 export default function RootLayout({

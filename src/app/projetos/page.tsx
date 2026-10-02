@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import HeaderColorida from "../_components/HeaderColorida";
+
+export const metadata: Metadata = {
+  title: "Projetos",
+  description:
+    "Conheça os projetos do Instituto Tamo Junto em Milagres: educação, sustentabilidade, saúde e cultura. Cada projeto nasce da comunidade e volta para ela.",
+};
 
 const projetos = [
   {

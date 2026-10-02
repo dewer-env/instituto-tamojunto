@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import HeaderColorida from "../_components/HeaderColorida";
 import GaleriaGrid from "../_components/GaleriaGrid";
+
+export const metadata: Metadata = {
+  title: "Galeria",
+  description:
+    "Galeria do Instituto Tamo Junto: registros da nossa comunidade, da nossa praia e da história da Rota Ecológica dos Milagres. Cada foto é um pedaço de Milagres.",
+};
 
 export default function GaleriaPage() {
   return (
